@@ -19,11 +19,11 @@ class CurrCity extends React.Component{
                 </div>
                 <div className="info_div">
                     <span>Feels Like: {kelvinToCelcius(main.feels_like)}°</span>
-                    <span><i class="fa-solid fa-wind"></i> {wind.speed}</span>
+                    <span>Pressure: {main.pressure}</span>
                 </div>
 
-                <div className="info_div">
-                <span>Pressure: {main.pressure}</span>
+                <div className="info_div">   
+                    <span><i class="fa-solid fa-wind"></i> {wind.speed}</span>
                     <span><i class="fa-solid fa-droplet"></i> {main.humidity}</span>
                 </div>
                 <DailyDiv dailyData={this.props.dailyData}/>
