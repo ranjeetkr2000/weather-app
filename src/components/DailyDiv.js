@@ -7,11 +7,6 @@ class DailyDiv extends Component {
         const list = this.props.dailyData.list;
         return (
             <div className="daily_div">
-                {/* <div className="day">list</div>
-                <div className="day"></div>
-                <div className="day"></div>
-                <div className="day"></div>
-                <div className="day"></div> */}
                 <DayDiv dayData={list[0]}/>
                 <DayDiv dayData={list[1]}/>
                 <DayDiv dayData={list[2]}/>
